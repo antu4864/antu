@@ -1,0 +1,15 @@
+<div class="row m-0 project_main">
+    <div class="col-lg-3 col-md-6 col-sm-6" *ngFor="let project of projects">
+        <mat-card class="project_card">
+            <!-- <div class="project_image">
+                <img [src]="project.imageUrl" alt="Photo of a Shiba Inu">
+            </div> -->
+            <mat-card-content>
+                <h3 class="project_name">{{project.name}}</h3>
+                <p>Technology Used : {{ project.explain}}</p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+
+</div>
+

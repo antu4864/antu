@@ -1,0 +1,190 @@
+.contact_main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 126px);
+}
+
+.contact_main h3 {
+    font-family: 'Graphik-Bold-Web';
+    font-size: 26px;
+    text-align: center;
+    margin: 16px 0px 30px 0px !important;
+}
+
+.reach {
+    font-family: 'Graphik-Regular-Web';
+    font-size: 14px;
+}
+
+.first_insideBox {
+    max-width: 450px;
+    margin: auto;
+
+    .inquiries {
+        font-family: 'Graphik-Regular-Web';
+        font-size: 14px;
+    }
+
+    .card {
+        background: transparent;
+        padding: 12px;
+        margin-top: 20px;
+        color: #fff;
+        border: none;
+
+        .card_inside {
+            display: flex;
+            justify-content: center;
+
+            .image_main {
+                width: 80px;
+                height: 80px;
+
+                img {
+                    border-radius: 50%;
+                }
+            }
+
+        }
+    }
+}
+
+.first_boxMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first_insideBox .detail {
+    margin: auto 0 auto 20px;
+
+    h4 {
+        font-family: 'Graphik-Medium-Web';
+        font-size: 18px;
+    }
+
+    p {
+        font-family: 'Graphik-Regular-Web';
+        font-size: 14px;
+        margin-top: 12px;
+    }
+}
+
+
+.second_insideBox {
+    max-width: 500px;
+    margin: auto;
+    padding: 30px;
+    // margin-top: 30px;
+    // box-shadow: 0px 0px 6px rgba(0, 255, 255, 0.6);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 255, 255, 0.3) 0px 5px 10px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.contact_main .send {
+    background: #fff;
+    width: 150px;
+    margin: 12px 0px 10px 16px;
+    transition: 0.4 ease-in-out;
+    font-family: 'Graphik-Medium-Web';
+    font-size: 14px;
+
+    &:hover {
+        background: #ceffff;
+    }
+
+}
+
+.contact_main .reset {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    width: 150px;
+    margin: 12px 0px 10px 16px;
+    transition: 0.4 ease-in-out;
+    font-family: 'Graphik-Medium-Web';
+    font-size: 14px;
+
+    &:hover {
+        background: #000;
+    }
+
+}
+
+.social_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+
+.defaultBtn {
+    border: 0;
+    box-shadow: none;
+    outline: none;
+    background: transparent;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.defaultBtn svg {
+    fill: #fff;
+    border-radius: 12%;
+}
+
+.defaultBtn:hover {
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+    border: none;
+    transition: box-shadow 400ms cubic-bezier(0.2, 0, 0.7, 1), -webkit-transform 200ms cubic-bezier(0.2, 0, 0.7, 1);
+    transition: box-shadow 400ms cubic-bezier(0.2, 0, 0.7, 1), transform 200ms cubic-bezier(0.2, 0, 0.7, 1);
+    transition: box-shadow 400ms cubic-bezier(0.2, 0, 0.7, 1), transform 200ms cubic-bezier(0.2, 0, 0.7, 1), -webkit-transform 200ms cubic-bezier(0.2, 0, 0.7, 1);
+    box-shadow: 0 0 1px 8px rgba(0, 255, 255, 0.4), 0 0 1px 16px rgba(0, 255, 255, 0.1), 0 0 1px 24px rgba(0, 255, 255, 0.1);
+
+    svg{fill: #00FFFF;}
+}
+
+
+
+.contact_me{place-items: center;display: grid;}
+.con-h1 {text-transform: uppercase;position: relative;}
+
+.con-h1::before {
+    content: "CONNECT_ME";
+    width: 100%;
+    color: #00FFFF;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    border-right: 0.4rem #00FFFF;
+    animation: solid 4s linear infinite;
+    -webkit-animation: slide 3s linear infinite;
+    overflow: hidden;
+}
+
+@keyframes slide {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+	.contact_main h3 {
+        font-size: 22px;
+        margin: 0px 0px 10px 0px !important;
+    }
+}

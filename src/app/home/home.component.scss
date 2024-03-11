@@ -1,0 +1,83 @@
+.home_main{align-items: center;min-height: 81vh;}
+.Morning_text p{font-size: 16px;}
+.left_main{display: flex;justify-content: center;align-items: center;
+
+    h2{font-size: 40px;margin-bottom: 30px !important;}
+
+
+}
+
+#typed-text{display: inline;font-size: 24px;}
+::ng-deep .typed-cursor{font-size: 24px}
+.home_main .Morning_text{color: #fff;position: relative;margin-bottom: 30px;}
+
+.home_btn{margin-top: 30px;color: #fff !important;width: 150px;font-size: 13px;font-family: 'Graphik-Medium-Web';margin-right: 12px;}
+
+.send_email{box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.25);background: linear-gradient( to left, #F3A713 50%, transparent 50%) right;background-size: 200%;transition: 0.5s ease-out;border: 1px solid #F3A713;}
+.send_email:hover{background-position: left;border: 1px solid #F3A713;}
+
+.download{border: 1px solid #1A9F68;transition: 0.5s ease-out;
+
+    &:hover{background: #1A9F68;}
+
+}
+
+.home_main .right{max-width: 360px;max-height: 400px;margin: auto;}
+
+
+.wave {
+    -webkit-animation-duration: 2.1s;
+    animation-duration: 2.1s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: wave-animation;
+    animation-name: wave-animation;
+    display: inline-block;
+    -webkit-transform-origin: 70% 70%;
+    transform-origin: 70% 70%;
+}
+
+
+@keyframes wave-animation {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    10% {
+        -webkit-transform: rotate(14deg);
+        transform: rotate(14deg);
+    }
+    20% {
+        -webkit-transform: rotate(-8deg);
+        transform: rotate(-8deg);
+    }
+    30% {
+        -webkit-transform: rotate(14deg);
+        transform: rotate(14deg);
+    }
+    40% {
+        -webkit-transform: rotate(-4deg);
+        transform: rotate(-4deg);
+    }
+    50% {
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+    60% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+}
+
+
+
+@media only screen and (max-width: 744px) {
+    .home_main .right{display: none;}
+    .home_main .left_main{width: 100%;height: calc(100vh - 126px);
+    }
+}

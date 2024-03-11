@@ -1,0 +1,76 @@
+.mr-2{margin-right: 8px;}
+
+
+.about_main{padding: 12px 12px;}
+.about_main .intro_main{text-align: center;max-width: 900px;margin: auto;}
+.about_main h2{font-family: 'Graphik-Semibold-Web';font-size: 32px;}
+.about_main p{font-family: 'Graphik-Regular-Web';font-size: 17px;}
+.about_main .image_main{position: relative;}
+.about_main .image_main .cicle_img{max-width: 700px;margin: auto;}
+.about_main .image_main .myImage{position: absolute;bottom: 0px;left: 42%;}
+.about_main .image_main .myImage img{height: 322px;}
+
+@media only screen and (max-width:980px){
+	.about_main .image_main .myImage{left: 38%;}
+}
+
+@media only screen and (max-width:730px){
+	.about_main .image_main .myImage{left: 35%;}
+	.about_main .image_main .myImage img{height: 300px;}
+}
+
+@media only screen and (max-width:700px){
+	.about_main .image_main .myImage img{height: 280px;}
+	.about_main .image_main{margin-top: 36px;}
+}
+@media only screen and (max-width:620px){
+	.about_main .image_main .myImage img{height: 240px;}
+}
+@media only screen and (max-width:520px){
+	.about_main .image_main .myImage img{height: 200px;}
+}
+@media only screen and (max-width:400px){
+	.about_main .image_main .myImage img{height: 150px;}
+}
+
+
+.education_main{padding: 30px 12px;margin-top: 20px;}
+.education_main h3{font-family: 'Graphik-Bold-Web';font-size: 26px;text-align: center;}
+.education_main .card{max-width: 530px;margin: auto;padding: 20px 30px;border-radius: 12px;background: transparent;border: 1px solid #f1f1f1;color: #fff;margin-bottom: 20px;}
+.education_main .green_bg{margin: 12px 0px;}
+.education_main .green_bg span{background-color: #1a9f68;padding: 8px 12px 8px 8px;border-radius: 2px;color: #fff;font-size: 14px;font-family: 'Graphik-Regular-Web';}
+.education_main .card h4{font-size: 18px;font-family: 'Graphik-Semibold-Web';}
+.education_main .major_sub{font-size: 12px;font-family: 'Graphik-Regular-Web';margin: 0px 0px 14px 0px;white-space: nowrap;text-overflow: ellipsis; overflow: hidden;}
+.education_main .card_insideBox{border: 1px solid #bbbbbb;border-radius: 12px;padding: 20px;}
+.education_main .card .year{width: 50%;font-size: 14px;font-family: 'Graphik-Regular-Web';text-align: center;position: relative;}
+.education_main .card .year::after{content: "";position: absolute;top: -7px;right: 0;height: 34px;border: 1px solid #bbb;}
+.education_main .card .marks{width: 50%;font-size: 14px;font-family: 'Graphik-Regular-Web';text-align: center;}
+
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+	.education_main .card{min-height: 265px;}
+}
+
+
+// Skills
+
+.skill_main {padding: 30px 12px;}
+.skill_main h3{font-family: 'Graphik-Bold-Web';font-size: 26px;text-align: center;}
+.skill_main .card{justify-content: center;align-items: center;padding: 16px;margin: 20px 12px;min-width: 280px; background: transparent;box-shadow: 0px 1px 4px #fff;}
+.skill_main .card_inside .image{width: 50px;height: 50px;margin: auto;}
+.skill_main .card_inside .lang_name{text-align: center;font-size: 14px;padding: 20px 0px 6px 0px;font-family: 'Graphik-Medium-Web';color: #fff;}
+  
+
+@media only screen and (max-width:767px){
+	.about_main h2{font-size: 26px;}
+	.about_main p{font-size: 14px;line-height: 20px;}
+	.education_main .card h4{font-size: 16px;}
+	.education_main .major_sub {white-space: normal;}
+}
+
+
+@media only screen and (min-width: 550px) and (max-width: 680px) {
+	.skill_main .card{min-width: 228px;}
+}
+
+
+

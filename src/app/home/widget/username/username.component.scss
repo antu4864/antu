@@ -1,0 +1,38 @@
+.username_main{
+    background: #1e1e1e;color: #fff;padding-bottom: 12px;
+    
+    .header{
+        border-bottom: 1px solid #fff;display: flex;align-items: center;justify-content: space-between;padding: 12px 0 12px 12px;
+
+        h5{font-size: 18px; font-family: 'Graphik-Semibold-Web';}
+
+        .cross_btn{background: transparent;border: none !important;width: 20px;height: 20px;
+
+            &:active{border: none;background: transparent;}
+            &:focus{border: none;}
+        }
+
+        .cross_btn svg:active{border: none !important;}
+    }
+
+    p{padding: 20px 12px;font-size: 14px;font-family: 'Graphik-Regular-Web';}
+
+}
+
+.ok{    border: 1px solid #fff;color: #fff !important;width: 80px;font-size: 12px;height: 32px;float: right;margin: 12px 16px 4px 0px;}
+
+.field-scope .mat-mdc-form-field-input-control:focus{border: 1px solid #fff !important;}
+::ng-deep .username_main .field-scope .mat-mdc-form-field .mat-mdc-floating-label.mdc-floating-label {color: #fff !important;}
+
+::ng-deep .cdk-overlay-dark-backdrop {background: rgb(0 0 0 / 87%) !important;}
+
+::ng-deep  .cdk-overlay-pane{
+    box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.8);
+}
+@media only screen and (max-width: 959px) {
+    ::ng-deep .cdk-overlay-pane{width: 80vh !important;}
+}
+
+// @media only screen and (max-width: 767px) {
+//     ::ng-deep .cdk-overlay-pane{width: 80vh !important;}
+// }

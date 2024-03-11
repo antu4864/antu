@@ -1,0 +1,105 @@
+.main-header {
+    height: 72px;
+    background: transparent;
+    // box-shadow: 0px 2px 4px #0000002B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    // position: absolute;
+    // z-index: 3;
+    transition: 0.3s;
+    background: #333;
+}
+
+.mat-elevation-z5 {
+    box-shadow: none;
+}
+
+.sticky {
+    position: fixed;
+    top: 0px;
+    background: #000000bd;
+    z-index: 2;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 8px 12px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 30px;
+    font-family: 'Graphik-Medium-Web';
+}
+
+.menu .active {color: #00FFFF !important;}
+
+.menu a:hover{color: #00FFFF !important;}
+
+.active {color: #00FFFF !important;}
+
+.menu-spacer {
+    flex: 1 1 auto;
+}
+.mat-toolbar-row{padding: 0;}
+
+.layout-rightpanel {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    height: 100%;
+    padding: 0;
+    width: 240px;
+    overflow: auto;
+    background-color: #1e1e1e;
+    transform: translate3d(-360px, 0px, 0px);
+    transition: transform 0.2s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    box-shadow: 0px 10px 40px rgba(41, 50, 65, 0.06);
+}
+
+.layout-rightpanel .rightpanel-wrapper {
+    padding: 0px;
+}
+
+.layout-rightpanel .rightpanel-wrapper .section-header {
+    padding: 8px 12px;
+    // border-bottom: 1px solid #4d4949;
+    height: 72px;
+    align-items: center;
+    background: #333333;
+}
+
+.layout-rightpanel .rightpanel-wrapper .section-header .backButton {
+    background: transparent;
+    border: transparent;
+    padding: 7px 0;
+    padding-right: 10px;
+}
+
+.layout-wrapper.layout-rightpanel-active .layout-rightpanel {
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.section-header svg{fill: #fff;}
+
+// Side Contant
+
+.themeController-contant{
+    padding: 8px 12px;
+}
+.themeController-contant a{color: #fff;display: grid;justify-content: left;}
+.themeController-contant a:hover{color: #121212;}
+
+// responsive
+
+@media only screen and (max-width: 959px) {
+    .main-header{padding: 8px 4px;}
+}
+
+// @media only screen and (max-width: 767px) {
+//     .main-header{padding: 2px 15px 2px 15px;}
+// }
+
